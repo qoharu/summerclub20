@@ -13,9 +13,5 @@ func main() {
 	
 	fmt.Println("Testing")
 
-	// for _, var := range var {
-	// 	fmt.Println("Testing")
-	// }
-
 	r.Run()
 }
