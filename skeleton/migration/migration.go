@@ -1,8 +1,8 @@
 package migration
 
 import (
-	"summerclub20/covid20/database"
-	"summerclub20/covid20/model"
+	"summerclub20/skeleton/database"
+	"summerclub20/skeleton/model"
 )
 
 //Migrate ... Database migration.
