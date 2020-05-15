@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"summerclub20/covid19/database"
-	"summerclub20/covid19/model"
+	"covid19/database"
+	"covid19/model"
 
 	"github.com/gin-gonic/gin"
 )

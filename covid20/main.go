@@ -1,9 +1,9 @@
 package main
 
 import (
-	"summerclub20/covid20/controller"
-	"summerclub20/covid20/database"
-	"summerclub20/covid20/migration"
+	"covid20/controller"
+	"covid20/database"
+	"covid20/migration"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/jinzhu/gorm/dialects/postgres"

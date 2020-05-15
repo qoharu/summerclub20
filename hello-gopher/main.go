@@ -1,20 +1,16 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	r := gin.Default()
-	r.GET("/hello", func(c *gin.Context) {
+	router := gin.Default()
+	router.GET("/hello", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "Hello Gopher",
 		})
 	})
 
-	fmt.Println("Testing")
-
-	r.Run()
+	router.Run()
 }
