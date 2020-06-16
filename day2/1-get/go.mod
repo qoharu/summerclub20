@@ -1,4 +1,4 @@
-module day2
+module summerclubday2
 
 go 1.14
 
