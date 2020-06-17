@@ -34,5 +34,27 @@ func main() {
 		})
 	})
 
+	router.POST("/car/insertDetail", func(context *gin.Context) {
+		
+		type carModel struct {
+			Name string `json:"name"`
+			Year int `json:"year"`
+			Color string `json:"color"`
+		}
+
+		var newCar carModel
+
+		context.ShouldBindJSON(&newCar)
+
+		context.JSON(200, gin.H{
+			"result": gin.H{
+				"message": "Car with name " + newCar.Name + " is created",
+			},
+			"success":      true,
+			"errorMessage": nil,
+		})
+	})
+
+
 	router.Run()
 }
