@@ -1,4 +1,4 @@
-module hello-gopher
+module summerclubday3
 
 go 1.14
 
